@@ -1,0 +1,2 @@
+# Simple_Medical_image_classification_based_on_ResNet
+基于resnet的简单医学图像分类
