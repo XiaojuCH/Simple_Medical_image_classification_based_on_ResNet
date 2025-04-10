@@ -1,0 +1,9 @@
+# 忽略 output 文件夹
+output/
+
+# 忽略 medmnist 文件夹
+medmnist/
+
+.idea/
+
+__pycache__/
