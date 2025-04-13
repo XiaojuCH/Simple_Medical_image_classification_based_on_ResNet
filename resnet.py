@@ -11,7 +11,7 @@ class ResNet18(nn.Module):
     def __init__(self, in_channels, num_classes):
         super(ResNet18, self).__init__()
         # 加载预训练模型
-        self.model = models.resnet18(pretrained=False)
+        self.model = models.resnet18(pretrained=True)
         # 修改输入通道数
         if in_channels != 3:
             self.model.conv1 = nn.Conv2d(in_channels, 64, kernel_size=7, stride=2, padding=3, bias=False)
@@ -26,7 +26,7 @@ class ResNet50(nn.Module):
     def __init__(self, in_channels, num_classes):
         super(ResNet50, self).__init__()
         # 加载预训练模型
-        self.model = models.resnet50(pretrained=False)
+        self.model = models.resnet50(pretrained=True)
         # 修改输入通道数
         if in_channels != 3:
             self.model.conv1 = nn.Conv2d(in_channels, 64, kernel_size=7, stride=2, padding=3, bias=False)
