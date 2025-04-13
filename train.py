@@ -52,8 +52,6 @@ def main(flag, input_root, output_root, end_epoch, download):
 
     print('==> Preparing data...')
     train_transform = transforms.Compose([
-        transforms.RandomHorizontalFlip(),  # 随机水平翻转
-        transforms.RandomRotation(10),      # 随机旋转
         transforms.ToTensor(),
         transforms.Normalize(mean=[.5], std=[.5])
     ])
